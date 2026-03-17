@@ -3,29 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TeleVivo Cadastro</title>
+    <title>Exercicio07</title>
 </head>
 <body>
-    <header>
-        <h1>Locação de Autos do Dito</h1>
-        <img src="imagem/Captura de tela 2026-03-09 090537.png" alt="Imagem 1" width="250"height="150">
-        <P>Há 45 anos atuando na área de locação de veículios com segurança e garantia de satisfção. Temos os melhores preços e modelos do mercado.</P>
-    </header>
-    <hr>
-    <main>
-        <selection>
-            <h3>Análise de cadastro</h3>
-           <p>Preencha os campos abaixo e analisaremos seus dados.<br>Se tudo estiver correto ligaremos para marcar uma visita</p>
-           <form method="post" action="#">
-            <fieldset>
-                <legend>Dados pessoais</legend>
-                <label>Nome</label>
-                <input type="text" name="nome" placeholder="digite seu nome" required>
-                <label>Data de nascimento </label>
-            </fieldset>
-           </form>
-        </selection>
-    </main>
+    <div>
+        <header>
+            <h1>Locação de atuos do Dito</h1>
+            <img src="imagem/Captura de tela 2026-03-09 090537.png" width="300" height="200">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur officia, similique perferendis ad optio at nihil. Recusandae voluptatibus excepturi, quidem, accusantium, sunt nesciunt maxime repudiandae.</p>
+        </header>
+        <hr>
+        <main>
+            <section>
+                <h3>Análise de cadastro</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error est<br> voluptatem et facere non libero, quas perferendis exercitationem officiis<br>possimus quidem aperiam accusantium eius a distinctio tempore enim eos sint?</p>
+                <form method="post" action="#">
+                    <fieldset>
+                        <legend>Dados pessoais</legend>
+                        <label>nome</label>
+                        <input type="text" name="nome" placeholder="Insira seu nome aqui" required="yes">
+                        <label>Data de nascimento</label>
+                        <input type="date" name="data_nascimento" required="yes">
+                        <label>telefone</label>
+                        <input type="tel" name="telefone" placeholder="(XX) XXXXXX-XXXXX" required="yes">
+                    </fieldset>
+                    <fieldset>
+                        <legend>CNH</legend>
+                        <label>Número do registro</label>
+                        <input type="number" name="Numero_registro" placeholder="Seu número de CNH aqui" required="yes">
+                        <label>Validade</label>
+                        <input type="date" name="data_Validade" required="yes">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Carro</legend>
+                        <label>Modelo de carro</label>
+                        <select name="carro" required="yes">
+                            <option value="">Escolha seu carro</option>
+                        <optgroup label="Volkwagem">
+                            <option value="gol"></option>
+                            <option value="golf"></option>
+                            <option value="fox"></option>
+                        </optgroup>
+                        </select>
+                    </fieldset>
+                </form>
+
+            </section>
+
+            
+        </main>
+    </div>
     
 </body>
 </html>
